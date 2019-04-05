@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#">
+
+  <script src="https://code.jquery.com/jquery-3.3.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+</head>
+<style></style>
+<body></body>
+<script>
+(function($){
+function scrollFunction(x){ 
+if(x = 600)
+$('button.menu-toggle').click(function(event) {            
+var start = $('#navigation-wrapper').offset().top;
+    var scroll = $(window).scrollTop();
+        soc = $('#social-menu').outerHeight();
+        travel = $('#navigation-wrapper').offset().top;
+       snap = (travel - soc);
+    if (scroll <= snap) {
+     $('html, body').animate({scrollTop: snap}, 800)
+        
+    };
+
+});       
+};
+var x = window.innerWidth;
+scrollFunction(x) 
+x.addListener; 
+}(jQuery));
+</script>
+</html>
